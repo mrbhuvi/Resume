@@ -1,0 +1,399 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family:sans-serif;
+    box-sizing: border-box;
+}
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../harihareshwar.jpeg);
+    background-size: cover;
+    background-position: center;
+    flex-wrap: wrap;
+    
+}
+.checked,#check{
+    display: none;
+}
+.list{
+    display: flex;
+    list-style: none;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 40px;
+    flex-wrap: wrap;
+}
+.logo{
+    color: white;
+    letter-spacing: 1px;
+    font-size: 35px;
+    cursor: pointer;
+
+
+}
+span{
+    color: rgb(187, 32, 8);
+}
+
+nav ul li{
+    display: inline;
+    list-style: none;
+    padding: 10px 20px;
+}
+nav ul li a{
+    color: white
+    
+    ;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+nav ul li a:hover{
+    color: brown;
+    transition: 0.4s;
+}
+
+/* #check {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: #333;
+    background: #18453b;
+    text-align: right;
+    padding: 10px 0;
+    display: none;
+  }
+   */
+  
+  /*Hide checkbox*/
+  
+  /* #check {
+    display: none;
+    opacity: 0;
+    animation: anim-back .3s ease-in-out;
+  } */
+  .checked{
+    color: white;
+    margin: 0;
+    margin-right: 5%;
+    display: none;
+}
+
+.checked i {
+    font-size: 2rem;
+}
+
+@media screen and (max-width:800px) {
+    .list{
+        
+        margin: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        background-color: #828470;
+        box-shadow: 0px 4px 8px 1px #535547;
+        top: 50px;
+        left: 80%;
+        transition: all 1s;
+        
+    }
+
+    .checked:hover .li{
+        display: block;
+        position: absolute;
+        right: 3%;
+    }
+
+    /* .hero nav{
+        display: none;
+    } */
+      .checked{
+        display: block;
+    }
+    .list li a:hover{
+        background-color: aqua;
+        color: black;
+    }
+    /* #check:checked ul{
+        left: 70%;
+    }  */
+}
+
+
+/* Content */
+.content{
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+h1{
+    color: white;
+    font-size: 50px;
+    margin: 20px 0px 20px;
+}
+h3{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+h4{
+    color: antiquewhite;
+    letter-spacing: 2px;
+    font-size: 20px;
+
+}
+.newslatter form{
+    width: 380px;
+    max-width: 100%;
+    position: relative;
+    
+}
+.newslatter form input:first-child{
+    display: inline-block;
+    width: 100%;
+    padding: 14px 130px 14px 15px;
+    border-radius: 30px;
+    border: 2px solid wheat;
+    border-radius: 30px;
+    outline: none;
+}
+
+.newslatter form input:last-child{
+    position: absolute;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: none;
+    background-color: rgb(123, 9, 9);
+    color: white;
+    outline: none;
+    top: 5px;
+    right: 6px;
+    box-shadow: 0px 0px 5px black;
+    
+}
+
+/* about */
+
+
+.about{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #191919;
+}
+.about img{
+    height: auto;
+    width: 430px;
+}
+.about-text{
+    width: 550px;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+}
+
+.about-text h2{
+    color: white;
+    font-size: 70px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+
+}
+.about-text h5{
+    color: white;
+    font-size: 22px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+
+}
+.about-text p{
+    color:red;
+    letter-spacing: 2px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.about-text button{
+    background-color: red;
+    color: white;
+    border-radius: 30px;
+    padding: 13px 30px;
+    box-shadow: 0px 0px 5px 0px black;
+    border: 2px solid transparent;
+    transition: .4s;
+}
+.about-text button:hover{
+    background-color: #191919;
+    border: 2px solid red;
+    cursor: pointer;
+}
+
+.project{
+    width: 100%;
+    background-color: #191919;
+    padding: 100px 0px;
+}
+.title h2{
+    color: white;
+    font-size: 75px;
+    margin: 30px auto;
+    width: 1130px;
+    justify-content: space-around;
+    text-align: center;
+}
+.box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 400px;
+}
+
+.card{
+    height: auto;
+    width: 335px;
+    background: #191919;
+    padding: 20px 30px;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.card i{
+    font-size: 50px;
+    display: block;
+    color: #f90044;
+    text-align: center;
+    margin: 25px auto;
+}
+.card h5{
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+.pra p{
+    color: #fafa;
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+.card .button{
+    background-color: red;
+    color: white;
+    border-radius: 20px;
+    padding: 8px 30px;
+    box-shadow: 0px 0px 5px 0px black;
+    border: 2px solid transparent;
+    transition: .4s;
+}
+.card .button:hover{
+    cursor: pointer;
+    background-color: #191919;
+    color: red;
+    border: solid #fafa;
+}
+
+/* Footer */
+
+.contact{
+    height: 290px;
+    width: 100%;
+    background: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    
+    
+}
+.contact p{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.contact .button2{
+    background-color: red;
+    color: white;
+    border-radius: 20px;
+    padding: 8px 30px;
+    box-shadow: 0px 0px 5px 0px black;
+    border: 2px solid transparent;
+    transition: .4s;
+}
+.contact .button2:hover{
+    cursor: pointer;
+    background-color: #191919;
+    border: 2px solid #fafa;
+    color: #f90044;
+
+}
+
+footer{
+    position: relative;
+    height: 465px;
+    width: 100%;
+    background: #191919;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.para1 p{
+    display: flex;
+    margin-bottom: 35px;
+    width: 400px;
+    
+}
+
+.para1 p:first-child{
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.para1 p:last-child{
+    color: #fafa;
+    font-size: 18px;
+    line-height: 28px;
+    
+    
+}
+
+.social{
+    display: flex;
+}
+
+.social a{
+    width: 50px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: rgb(219, 116, 116);
+    font-size: 30px;
+}
+.social a:hover{
+    cursor: pointer;
+    transform: scale(1.4);
+    transition: .2s;
+    
+}
