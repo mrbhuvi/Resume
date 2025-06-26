@@ -1,2 +1,2 @@
 # Resume
-My Demo Portfolio
+My Demo Portfolio using HTML, CSS and JS,
